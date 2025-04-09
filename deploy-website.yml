@@ -1,0 +1,33 @@
+name: Deploy Website
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      
+      - name: Update website
+        run: |
+          # If you need to build the website, add commands here
+          # For example: cd website && npm install && npm run build
+          # Then copy the build output to docs directory
+          
+          # For now, we're just copying the static files (already done in repository)
+          echo "Website files are ready in docs directory"
+      
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: docs
+          clean: true
