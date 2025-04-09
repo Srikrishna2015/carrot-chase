@@ -1,6 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-  <rect width="200" height="200" fill="#FF8800" rx="25" ry="25"/>
-  <text x="100" y="100" font-family="Arial" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">Carrot Chase</text>
-  <path d="M100,40 L120,70 L80,70 Z" fill="#22AA22" />
-  <path d="M95,70 L95,130 C95,140 105,140 105,130 L105,70 Z" fill="#22AA22" />
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#C5CAE9" rx="8" ry="8"/>
+  
+  <!-- Sun -->
+  <circle cx="500" cy="70" r="40" fill="#FFEB3B"/>
+  <circle cx="500" cy="70" r="30" fill="#FFF176"/>
+  
+  <!-- Water/Pond -->
+  <rect x="0" y="250" width="600" height="150" fill="#81D4FA"/>
+  <rect x="0" y="250" width="600" height="10" fill="#4FC3F7" opacity="0.5"/>
+  <rect x="0" y="280" width="600" height="10" fill="#4FC3F7" opacity="0.5"/>
+  <rect x="0" y="310" width="600" height="10" fill="#4FC3F7" opacity="0.5"/>
+  <rect x="0" y="340" width="600" height="10" fill="#4FC3F7" opacity="0.5"/>
+  <rect x="0" y="370" width="600" height="10" fill="#4FC3F7" opacity="0.5"/>
+  
+  <!-- Lily Pads -->
+  <g transform="translate(100, 280)">
+    <circle cx="0" cy="0" r="30" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="25" fill="#4CAF50"/>
+    <path d="M0,0 L20,-10 L0,-25 L-20,-10 Z" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="5" fill="#FFC107"/>
+  </g>
+  
+  <g transform="translate(200, 320)">
+    <circle cx="0" cy="0" r="25" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="20" fill="#4CAF50"/>
+    <path d="M0,0 L15,-8 L0,-20 L-15,-8 Z" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="4" fill="#FFC107"/>
+  </g>
+  
+  <g transform="translate(350, 300)">
+    <circle cx="0" cy="0" r="35" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="30" fill="#4CAF50"/>
+    <path d="M0,0 L25,-12 L0,-30 L-25,-12 Z" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="6" fill="#FFC107"/>
+  </g>
+  
+  <g transform="translate(480, 330)">
+    <circle cx="0" cy="0" r="30" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="25" fill="#4CAF50"/>
+    <path d="M0,0 L20,-10 L0,-25 L-20,-10 Z" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="5" fill="#FFC107"/>
+  </g>
+  
+  <!-- Bunny on Lily Pad -->
+  <g transform="translate(350, 300)">
+    <!-- Body -->
+    <ellipse cx="0" cy="-25" rx="20" ry="25" fill="#FFFFFF"/>
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="18" fill="#FFFFFF"/>
+    <!-- Ears -->
+    <ellipse cx="-10" cy="-78" rx="6" ry="18" fill="#FFFFFF"/>
+    <ellipse cx="10" cy="-78" rx="6" ry="18" fill="#FFFFFF"/>
+    <!-- Eyes -->
+    <circle cx="-6" cy="-63" r="2.5" fill="#000000"/>
+    <circle cx="6" cy="-63" r="2.5" fill="#000000"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-58" rx="3" ry="2" fill="#FF9E80"/>
+  </g>
+  
+  <!-- Carrots -->
+  <g transform="translate(200, 320)">
+    <path d="M0,-10 L8,-30 L-8,-30 Z" fill="#FF8800"/>
+    <rect x="-2" y="-34" width="4" height="8" fill="#4CAF50"/>
+  </g>
+  
+  <g transform="translate(480, 330)">
+    <path d="M0,-10 L8,-30 L-8,-30 Z" fill="#FF8800"/>
+    <rect x="-2" y="-34" width="4" height="8" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Level Text -->
+  <rect x="20" y="20" width="140" height="40" rx="20" ry="20" fill="rgba(0,0,0,0.5)"/>
+  <text x="90" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Level 2</text>
+  
+  <text x="300" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#303F9F" text-anchor="middle">Lily Pond</text>
 </svg>

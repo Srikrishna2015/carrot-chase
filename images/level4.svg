@@ -1,6 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-  <rect width="200" height="200" fill="#FF8800" rx="25" ry="25"/>
-  <text x="100" y="100" font-family="Arial" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">Carrot Chase</text>
-  <path d="M100,40 L120,70 L80,70 Z" fill="#22AA22" />
-  <path d="M95,70 L95,130 C95,140 105,140 105,130 L105,70 Z" fill="#22AA22" />
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#1B5E20" rx="8" ry="8"/>
+  
+  <!-- Sky through trees -->
+  <rect x="0" y="0" width="600" height="100" fill="#81C784"/>
+  
+  <!-- Tree trunks -->
+  <rect x="50" y="100" width="30" height="300" fill="#5D4037"/>
+  <rect x="180" y="80" width="40" height="320" fill="#5D4037"/>
+  <rect x="320" y="60" width="35" height="340" fill="#5D4037"/>
+  <rect x="450" y="90" width="45" height="310" fill="#5D4037"/>
+  <rect x="520" y="130" width="25" height="270" fill="#5D4037"/>
+  
+  <!-- Tree leaves/canopy -->
+  <circle cx="65" cy="100" r="50" fill="#2E7D32"/>
+  <circle cx="200" cy="80" r="70" fill="#2E7D32"/>
+  <circle cx="337" cy="60" r="60" fill="#2E7D32"/>
+  <circle cx="472" cy="90" r="65" fill="#2E7D32"/>
+  <circle cx="532" cy="130" r="45" fill="#2E7D32"/>
+  
+  <!-- Vines -->
+  <path d="M100,150 C150,140 180,170 220,150 C260,130 300,160 340,140 C380,120 420,150 450,130 C480,110 520,130 550,110" fill="none" stroke="#66BB6A" stroke-width="5"/>
+  <path d="M80,200 C120,190 140,220 180,200 C220,180 260,210 300,190 C340,170 380,200 420,180 C460,160 500,190 540,170" fill="none" stroke="#66BB6A" stroke-width="4"/>
+  
+  <!-- Ground/forest floor -->
+  <rect x="0" y="300" width="600" height="100" fill="#33691E"/>
+  
+  <!-- Ferns and plants -->
+  <g transform="translate(120, 320)">
+    <path d="M0,0 C-15,-10 -25,-25 -15,-35 C-5,-45 0,-30 5,-40 C10,-50 20,-45 15,-30 C10,-15 5,-10 10,-5 C15,0 10,10 0,0 Z" fill="#388E3C"/>
+  </g>
+  
+  <g transform="translate(420, 330)">
+    <path d="M0,0 C-15,-10 -25,-25 -15,-35 C-5,-45 0,-30 5,-40 C10,-50 20,-45 15,-30 C10,-15 5,-10 10,-5 C15,0 10,10 0,0 Z" fill="#388E3C"/>
+  </g>
+  
+  <g transform="translate(260, 350)">
+    <path d="M0,0 C-15,-10 -25,-25 -15,-35 C-5,-45 0,-30 5,-40 C10,-50 20,-45 15,-30 C10,-15 5,-10 10,-5 C15,0 10,10 0,0 Z" fill="#388E3C"/>
+  </g>
+  
+  <!-- Small mushrooms -->
+  <g transform="translate(150, 340)">
+    <rect x="-3" y="-5" width="6" height="5" fill="#8D6E63"/>
+    <path d="M-10,0 C-10,-8 10,-8 10,0 Z" fill="#D7CCC8"/>
+  </g>
+  
+  <g transform="translate(380, 360)">
+    <rect x="-3" y="-5" width="6" height="5" fill="#8D6E63"/>
+    <path d="M-10,0 C-10,-8 10,-8 10,0 Z" fill="#D7CCC8"/>
+  </g>
+  
+  <!-- Bunny -->
+  <g transform="translate(300, 270)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="20" ry="25" fill="#FFFFFF"/>
+    <!-- Head -->
+    <circle cx="0" cy="-35" r="18" fill="#FFFFFF"/>
+    <!-- Ears -->
+    <ellipse cx="-10" cy="-53" rx="6" ry="18" fill="#FFFFFF"/>
+    <ellipse cx="10" cy="-53" rx="6" ry="18" fill="#FFFFFF"/>
+    <!-- Eyes -->
+    <circle cx="-6" cy="-38" r="2.5" fill="#000000"/>
+    <circle cx="6" cy="-38" r="2.5" fill="#000000"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="-33" rx="3" ry="2" fill="#FF9E80"/>
+  </g>
+  
+  <!-- Carrots -->
+  <g transform="translate(200, 330)">
+    <path d="M0,0 L8,-20 L-8,-20 Z" fill="#FF8800"/>
+    <rect x="-2" y="-24" width="4" height="8" fill="#4CAF50"/>
+  </g>
+  
+  <g transform="translate(350, 350)">
+    <path d="M0,0 L8,-20 L-8,-20 Z" fill="#FF8800"/>
+    <rect x="-2" y="-24" width="4" height="8" fill="#4CAF50"/>
+  </g>
+  
+  <g transform="translate(450, 320)">
+    <path d="M0,0 L8,-20 L-8,-20 Z" fill="#FF8800"/>
+    <rect x="-2" y="-24" width="4" height="8" fill="#4CAF50"/>
+  </g>
+  
+  <g transform="translate(100, 280)">
+    <path d="M0,0 L8,-20 L-8,-20 Z" fill="#FF8800"/>
+    <rect x="-2" y="-24" width="4" height="8" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Colored butterflies -->
+  <g transform="translate(150, 180)">
+    <path d="M0,0 L-10,-5 L-12,-15 L-5,-10 L0,-15 L5,-10 L12,-15 L10,-5 Z" fill="#CE93D8"/>
+    <rect x="-0.5" y="0" width="1" height="5" fill="#212121"/>
+  </g>
+  
+  <g transform="translate(400, 150)">
+    <path d="M0,0 L-10,-5 L-12,-15 L-5,-10 L0,-15 L5,-10 L12,-15 L10,-5 Z" fill="#FFCC80"/>
+    <rect x="-0.5" y="0" width="1" height="5" fill="#212121"/>
+  </g>
+  
+  <!-- Level Text -->
+  <rect x="20" y="20" width="140" height="40" rx="20" ry="20" fill="rgba(0,0,0,0.5)"/>
+  <text x="90" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Level 4</text>
+  
+  <text x="300" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CCFF90" text-anchor="middle">Rain Forest</text>
 </svg>
