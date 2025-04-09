@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-  <rect width="200" height="200" fill="#FF8800" rx="25" ry="25"/>
-  <text x="100" y="100" font-family="Arial" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">Carrot Chase</text>
-  <path d="M100,40 L120,70 L80,70 Z" fill="#22AA22" />
-  <path d="M95,70 L95,130 C95,140 105,140 105,130 L105,70 Z" fill="#22AA22" />
-</svg>
